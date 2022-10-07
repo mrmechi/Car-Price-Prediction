@@ -14,6 +14,3 @@ class Data_Getter:
             return data 
         except:
             print("Unable to load the dataset")
-
-# a=Data_Getter()
-# print(a.get_data(),'aaaaaaaaaaaaaaaaaaa')

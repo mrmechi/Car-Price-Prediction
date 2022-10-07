@@ -53,6 +53,7 @@ class Cleaner:
     def removing_na_in_fuel_type(self,data,column):
         self.data=data
         self.column=column
+
         self.data=self.data[~self.data[self.column].isna()]
         return self.data
 
@@ -64,15 +65,15 @@ class Cleaner:
         return self.data
 
 
-    def index(self,data):
+    def new_index(self,data):
         self.data=data
 
-        self.index=self.data.reset_index(drop=True)
-        return self.index
+        self.indexs=self.data.reset_index(drop=True)
+        return self.indexs
 
 
-    def csv(self,data):
+    def new_csv(self,data):
         self.data=data
 
-        self.cleaned_data=self.data.to_csv('Cleaned_car_data.csv')
+        self.cleaned_data=self.data.to_csv('Cleaned_car_datassssssssss.csv')
         return self.cleaned_data
