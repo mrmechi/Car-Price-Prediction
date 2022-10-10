@@ -1,16 +1,12 @@
 import data_cleaner
 import data_loader
-import pre_processing
 
 
 class Clean_model:
 
     """
-          change the variable as per requirements as in jupyter notebook
-          therefore we created a new varible as year_data and passed year_data as argument 
-          like car['year'] in jupyter notebook
+       Calling the required methods from the data_cleaner
     """
-
 
     data=data_loader.Data_Getter().get_data()
 
@@ -34,7 +30,6 @@ class Clean_model:
 
     clean_data=data_cleaner.Cleaner().new_csv(clean_data)
 
- 
     print(clean_data)
 
 
